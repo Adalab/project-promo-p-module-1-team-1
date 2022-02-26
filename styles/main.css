@@ -116,13 +116,16 @@
 
 .footer-border {
   border: solid 2px var(--cool-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-container {
   background-color: white;
   color: #b8b8b9;
   display: flex;
-  justify-content: center;
+  flex-direction: ;
   height: fit-content;
 
   padding-bottom: 30px;
@@ -138,16 +141,20 @@ footer {
 
 .footer-links {
   font-size: 14px;
-  display: block;
-  justify-content: center;
+  list-style: none;
   text-align: center;
   color: #54585a;
   margin-bottom: 30px;
 }
+
+.footer-links a {
+  text-decoration: none;
+  color: #54585a;
+}
+
 .logo-adalab {
   width: 150px;
   height: 50px;
-  display: block;
-  justify-content: center;
+
   margin-bottom: 30px;
 }
