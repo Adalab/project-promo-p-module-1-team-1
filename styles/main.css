@@ -111,3 +111,25 @@
   color: var(--blue-green);
   font-size: 10px;
 }
+
+/*Footer*/
+.footer-container {
+  background-color: white;
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  height: 250px;
+  width: 320px;
+  margin
+}
+.footer-team-name {
+  color: #b8b8b9;
+  font-size: 14px;
+}
+
+.logo-adalab {
+  width: 115, 9px;
+  height: 45px;
+}
