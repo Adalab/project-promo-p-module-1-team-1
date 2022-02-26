@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   --black: #000;
   --light-grey-blue: rgba(184, 184, 185, 0.1);
@@ -14,6 +13,7 @@
   --aqua: #14d9c4;
   --white: white;
 }
+/*Header*/
 .header {
   width: 100%;
   /* height: 110px; */
@@ -36,12 +36,68 @@ a {
   color: var(--white);
   text-decoration: none;
 }
-/* .container2 {
-    width: 20px;
-    height: 20px;
-  } */
 
-.logo {
+.hero_img {
   width: 100%;
-  height: 100%;
+}
+/*Section Quienes somos*/
+.who_we_are {
+  padding: 30px 10px 0 10px;
+}
+.we_title {
+  color: var(--blue-green);
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+.member_list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.member {
+  text-align: center;
+  padding: 30px 0 0 0;
+}
+
+.member_name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  margin: 5px 0;
+  color: var(--black);
+}
+.member_img {
+  width: 180px;
+  margin: 0 55px 15px;
+  border-radius: 4px;
+  border: solid 5px var(--black-8);
+}
+.member_description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--dark-grey);
+}
+
+.rrss {
+  list-style-type: none;
+  margin: 20px 0;
+}
+
+.rrss_item {
+  display: inline-block;
+}
+.links {
+  color: var(--blue-green);
+  text-decoration: none;
+  font-family: "Font Awesome 5 Free";
+}
+.rrss_item_point {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--blue-green);
+  font-size: 10px;
 }
