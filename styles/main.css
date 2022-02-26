@@ -70,12 +70,12 @@
   margin: 0 15px;
   font-size: 16px;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .team_description p {
   margin-bottom: 20px;
 }
-.team_resume{
+.team_resume {
   font-size: 18px;
   color: var(--black);
 }
@@ -105,7 +105,7 @@
 }
 .strenghts_weakness p {
   font-weight: normal;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: var(--dark-grey);
   padding: 0 15px;
 }
