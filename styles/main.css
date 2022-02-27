@@ -3,6 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+.team:target::before {
+  content: "";
+  display: block;
+  height: 130px;
+  margin: -130px 0 0;
+}
+.who_we_are:target::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin: -120px 0 0;
+}
+
 :root {
   --black: #000;
   --light-grey-blue: rgba(184, 184, 185, 0.1);
@@ -110,13 +123,12 @@
   padding: 0 15px;
 }
 /*Section Quienes somos*/
-.who_we_are {
-  padding: 30px 10px 0 10px;
-}
+
 .we_title {
   color: var(--blue-green);
   font-family: "Rubik", sans-serif;
   text-align: center;
+  margin-top: 40px;
 }
 .member_list {
   display: flex;
@@ -124,6 +136,7 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px 35px 15px;
 }
 
 .member {
@@ -140,7 +153,7 @@
 .member_img {
   width: 180px;
   margin: 0 55px 15px;
-  border-radius: 43% 57% 43% 57% / 53% 36% 64% 47%;
+  border-radius: 4px;
   border: solid 5px var(--black-8);
 }
 .member_description {
