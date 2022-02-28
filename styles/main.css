@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.team:target::before {
+  content: "";
+  display: block;
+  height: 130px;
+  margin: -130px 0 0;
+}
+.who_we_are:target::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin: -120px 0 0;
+}
+
+:root {
+  --black: #000;
+  --light-grey-blue: rgba(184, 184, 185, 0.1);
+  --black-8: rgba(0, 0, 0, 0.08);
+  --cool-grey: #f1f1f1;
+  --dark-grey: #54585a;
+  --blue-green: #099d8d;
+  --blue-green-9: rgba(9, 157, 141, 0.9);
+  --aqua: #14d9c4;
+  --aqua-5: rgba(20, 217, 196, 0.5);
+  --white: white;
+}
+/*Header*/
+
+.header {
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  line-height: 2.5;
+  color: var(--white);
+  background-color: var(--blue-green-9);
+  position: fixed;
+  top: 0%;
+  z-index: 2;
+}
+
+.menu {
+  background-color: var(--aqua-5);
+  font-family: "Rubik", sans-serif;
+  color: var(--white);
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.menu_link {
+  color: var(--white);
+  text-decoration: none;
+}
+.hero {
+  position: relative;
+  top: 0;
+}
+.hero_img {
+  width: 100%;
+}
+.rectangle {
+  background-color: var(--white);
+  margin: -25px 25px 0px 25px;
+  padding: 10px 25px;
+  position: relative;
+}
+.team_and_strenghts {
+  font-family: Rubik;
+}
+.team_title {
+  color: var(--aqua);
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0 20px 0;
+}
+.team_description {
+  margin: 0 15px;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+.team_description p {
+  margin-bottom: 20px;
+}
+.team_resume {
+  font-size: 18px;
+  color: var(--black);
+}
+.rombo {
+  background-color: var(--white);
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  margin: 0 auto;
+}
+.strenghts_weakness {
+  background-color: var(--light-grey-blue);
+  margin-top: -15px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.strenghts_weakness h3 {
+  color: var(--blue-green);
+  font-size: 22px;
+  font-weight: normal;
+  margin: 10px 0;
+  padding: 30px 0 10px 0;
+}
+.strenghts_weakness h3:first {
+  margin-top: 50px;
+}
+.strenghts_weakness p {
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  color: var(--dark-grey);
+  padding: 0 15px;
+}
+/*Section Quienes somos*/
+
+.we_title {
+  color: var(--blue-green);
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  margin-top: 40px;
+}
+.member_list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px 35px 15px;
+}
+
+.member {
+  text-align: center;
+  padding: 30px 0 0 0;
+}
+
+.member_name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  margin: 5px 0;
+  color: var(--black);
+}
+.member_img {
+  width: 180px;
+  margin: 0 55px 15px;
+  border-radius: 4px;
+  border: solid 5px var(--black-8);
+}
+.member_description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--dark-grey);
+}
+
+.rrss {
+  list-style-type: none;
+  margin: 20px 0;
+}
+
+.rrss_item {
+  display: inline-block;
+}
+.links {
+  color: var(--blue-green);
+  text-decoration: none;
+  font-family: "Font Awesome 5 Free";
+}
+.rrss .links:hover {
+  color: var(--dark-grey);
+}
+.rrss_item_point {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--dark-grey);
+  font-size: 10px;
+}
+
+/*Footer*/
+
+.footer-border {
+  border: solid 2px var(--cool-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container {
+  background-color: white;
+  color: #b8b8b9;
+  display: flex;
+  height: fit-content;
+
+  padding-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+footer {
+  font-family: "Open Sans", sans-serif;
+}
+.footer-who-we-are {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-links {
+  font-size: 14px;
+  list-style: none;
+  text-align: center;
+  color: #54585a;
+  margin-bottom: 30px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #54585a;
+}
+
+.logo-adalab {
+  width: 150px;
+  height: 50px;
+
+  margin-bottom: 30px;
+}
