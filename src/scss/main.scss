@@ -241,3 +241,23 @@ footer {
 
   margin-bottom: 30px;
 }
+
+@media all and (min-width: 780px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 45px;
+  }
+  .menu {
+    background-color: transparent;
+  }
+  .team_name {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .hero {
+    background-image: url("./assets/images/Grifo.jpg");
+  }
+}
