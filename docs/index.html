@@ -2,67 +2,395 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <title>Project Team Grifo Team 1</title>
   </head>
-
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+    <!--Header-->
+   <header class="header">
+     <h1>EQUIPO GRIFO</h1>
+     <nav>
+       <ul class="menu">
+         <li>
+           <a class="menu_link" href="#equipo">EQUIPO</a>
+         </li>
+         <li>
+           <a class="menu_link" href="#quienes_somos">QUIENES SOMOS</a>
+         </li>
+         <li>
+           <a class="menu_link" href="contacto.html">CONTACTO</a>
+         </li>
+       </ul>
+     </nav>
+   </header>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+   <main>
+     <!--Section Imagen-->
+     
+     <section class="hero">
+       <img src="assets/images/Grifo.jpg" alt="foto grupo" class="hero_img" />
+     </section>
+     <!--section equipo-->
+     
+     <section>
+         <div class="team_and_strenghts">
+           <div class="rectangle">
+             <span class="team_resume">
+               Somos cinco luchadoras, cinco leonas, acostumbradas a trabajar
+               siempre duro.
+             </span>
+           </div>
+           <div class="team" id="equipo">
+             <h2 class="team_title">EQUIPO</h2>
+             <div class="team_description">
+               <p>
+                 Somos 5 leonas, hemos coincidido en un momento de la vida en el
+                 necesitábamos un cambio, y ahora estamos en ello.
+               </p>
+               <p>
+                 Nos hemos llamado el equipo grifo porque nos parece un ser
+                 fuerte y bello a la vez, y eso es lo que queremos llegar a ser
+                 entre todas.
+               </p>
+             </div>
+           </div>
+           <div class="rombo"></div>
+           <div class="strenghts_weakness">
+             <h3>Fortalezas</h3>
+             <p>
+               Desde el primer momento en que nos conectamos, congeniamos entre
+               todas, compartimos objetivos y luchamos por ellos. Nos ayudamos
+               las unas a las otras, compartimos el código y entre todas lo
+               escribimos. Somos autónomas, y nos encanta buscar infadormación y
+               compartirla. Nos apoyamos las unas a las otras porque nos
+               caracteriza el ser positivas. Y aunque la presión a veces puede
+               con nosotras, al final siempre hay una palabra de aliento para
+               quien la necesite.
+             </p>
+             <h3>Debilidades</h3>
+             <p>
+               Sabemos que no tenemos experiencia, y debido a ello a veces nos
+               falta la confianza para llegar a nuestras metas. Además, no
+               sabemos cómo acabaremos después de esto, si habernos reinventado
+               habrá sido la solución. Pero nos apoyamos las unas en las otras y
+               al final nos fortalecemos para sacar lo mejor de nosotras mismas.
+               Somos demasiado perfeccionistas, y lo vemos como una debilidad
+               porque al final nos exigimos demasiado, pero trabajaremos sobre
+               nuestras debilidades juntas para convertirlas en fortalezas.
+             </p>
+           </div>
+         </div>
+       </section>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+     <!--Section Quiénes Somos-->
+    
+     <section class="who_we_are" id="quienes_somos">
+         <h1 class="we_title">QUIÉNES SOMOS</h1>
+         <div class="member_list">
+          <article class="member">
+              <img
+                class="member_img"
+                src="./assets/images/Lucia.jpg"
+                alt="Lucía Acuña Ruadas"
+              />
+              <h3 class="member_name">Lucía Acuña Ruadas</h3>
+              <p class="member_description">
+               Auxiliar administrativa que por falta de trabajo en mi sector y en una situación difícil, tomé esta arriesgada decisión que ya está cambiando mi vida para siempre y que me convertirá en programadora front-end. Nueva profesión. Nuevas metas. Nuevos sueños.
+              </p>
+              <ul class="rrss">
+                <li class="rrss_item">
+                  <a
+                    class="links"
+                    href="https://twitter.com/ruadasLucia"
+                    target="_blank"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="rrss_item_point">•</li>
+                <li class="rrss_item">
+                  <a
+                    class="links"
+                    href="https://www.linkedin.com/in/luc%C3%ADa-acu%C3%B1a-ruadas-9b3888143/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li class="rrss_item_point">•</li>
+                <li class="rrss_item">
+                  <a
+                    class="links"
+                    href="https://github.com/ruadaslucia"
+                    target="_blank"
+                    ><i class="fab fa-github-alt"></i
+                  ></a>
+                </li>
+                <li class="rrss_item_point">•</li>
+                <li class="rrss_item">
+                  <a
+                    class="links"
+                    href="mailto:ruadaslucia@gmail.com"
+                    target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </li>
+              </ul>
+            </article>
 
-          </li>
-        </ul>
-      </main>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+          <article class="member">
+              <img
+                class="member_img"
+                src="./assets/images/Marta.jpg"
+                alt="Marta Torres Burguillo"
+              />
+              <h3 class="member_name">Marta Torres Burguillo</h3>
+              <p class="member_description">
+               Diseñadora de moda, me gradué y reboté de un contrato basura a
+          otro, decidí montar mi propia empresa e hice una tienda on line,
+          por aquel entonces no imaginaba que fuera capaz de poder programar
+          y acabé de dependienta. Pero sabía que eso no era lo quería así
+          que busqué, y decidí estudiar en la UNED trabajo social, mientras
+          seguía trabajando. Pero siempre he tenido el gusanillo de la
+          programación, ahora he decido que ya era hora de dar el paso.
+              </p>
+              <ul class="rrss">
+                <li class="rrss_item">
+                  <a
+                    class="links"
+                    href="https://twitter.com/burguimarta"
+                    target="_blank"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="rrss_item_point">•</li>
+                <li class="rrss_item">
+                  <a
+                    class="links"
+                    href="https://www.linkedin.com/in/marta-torres-burguillo/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li class="rrss_item_point">•</li>
+                <li class="rrss_item">
+                  <a
+                    class="links"
+                    href="https://github.com/burguimarta"
+                    target="_blank"
+                    ><i class="fab fa-github-alt"></i
+                  ></a>
+                </li>
+                <li class="rrss_item_point">•</li>
+                <li class="rrss_item">
+                  <a
+                    class="links"
+                    href="mailto:martatcr@gmail.com"
+                    target="_blank"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </li>
+              </ul>
+            </article>
 
-        </small>
-      </footer>
+        
+         <article class="member">
+             <img
+               class="member_img"
+               src="./assets/images/Carmen.jpg"
+               alt="Carmen Castro Sánchez"
+             />
+             <h3 class="member_name">Carmen Castro Sánchez</h3>
+             <p class="member_description">
+              Con 11 años de experiencia en E-commerce decidí reinventarme como
+         programadora Front-end. Me encantan los retos y trabajo duro para
+         conseguirlos, soy muy analítica y me encanta aportar soluciones.
+         Positiva, comunicativa y determinada. 🐎 Horse lover y muy
+         aventurera. 🌍He vivido en Londres y Bratislava, ahora mismo vivo
+         en Bucarest.
+             </p>
+             <ul class="rrss">
+               <li class="rrss_item">
+                 <a
+                   class="links"
+                   href="https://twitter.com/CarmenC51600212"
+                   target="_blank"
+                   ><i class="fab fa-twitter"></i
+                 ></a>
+               </li>
+               <li class="rrss_item_point">•</li>
+               <li class="rrss_item">
+                 <a
+                   class="links"
+                   href="https://www.linkedin.com/in/carmen-castro-5231591a2/"
+                   target="_blank"
+                   ><i class="fab fa-linkedin-in"></i
+                 ></a>
+               </li>
+               <li class="rrss_item_point">•</li>
+               <li class="rrss_item">
+                 <a
+                   class="links"
+                   href="https://github.com/Carmenyo"
+                   target="_blank"
+                   ><i class="fab fa-github-alt"></i
+                 ></a>
+               </li>
+               <li class="rrss_item_point">•</li>
+               <li class="rrss_item">
+                 <a
+                   class="links"
+                   href="mailto:carmencastroyo@gmail.com"
+                   target="_blank"
+                   ><i class="fas fa-envelope"></i
+                 ></a>
+               </li>
+             </ul>
+           </article>
 
-    </div>
-    <script src="./assets/js/main.js"></script>
+       
+        <article class="member">
+            <img
+              class="member_img"
+              src="./assets/images/Iris.jpg"
+              alt="Iris Mireya Zuñel Ballesteros"
+            />
+            <h3 class="member_name">Iris Mireya Zuñel Ballesteros</h3>
+            <p class="member_description">
+             
+            </p>
+            <ul class="rrss">
+              <li class="rrss_item">
+                <a
+                  class="links"
+                  href="https://twitter.com/IrisMireyazb"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="rrss_item_point">•</li>
+              <li class="rrss_item">
+                <a
+                  class="links"
+                  href="https://www.linkedin.com/in/iris-zunel-ballesteros"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li class="rrss_item_point">•</li>
+              <li class="rrss_item">
+                <a
+                  class="links"
+                  href="https://github.com/IrisMireya"
+                  target="_blank"
+                  ><i class="fab fa-github-alt"></i
+                ></a>
+              </li>
+              <li class="rrss_item_point">•</li>
+              <li class="rrss_item">
+                <a
+                  class="links"
+                  href="mailto:irismzb_86@hotmail.com"
+                  target="_blank"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </li>
+            </ul>
+          </article>
+         
+         
+       <article class="member">
+           <img
+             class="member_img"
+             src="./assets/images/Carlota.jpg"
+             alt="Carlota Blanco Aylagas"
+           />
+           <h3 class="member_name">Carlota Blanco</h3>
+           <p class="member_description">
+            
+           </p>
+           <ul class="rrss">
+             <li class="rrss_item">
+               <a
+                 class="links"
+                 href="https://twitter.com/carlotablnc"
+                 target="_blank"
+                 ><i class="fab fa-twitter"></i
+               ></a>
+             </li>
+             <li class="rrss_item_point">•</li>
+             <li class="rrss_item">
+               <a
+                 class="links"
+                 href="https://www.linkedin.com/in/carlotablancoaylagas/"
+                 target="_blank"
+                 ><i class="fab fa-linkedin-in"></i
+               ></a>
+             </li>
+             <li class="rrss_item_point">•</li>
+             <li class="rrss_item">
+               <a
+                 class="links"
+                 href="https://github.com/CarlotaBlanco"
+                 target="_blank"
+                 ><i class="fab fa-github-alt"></i
+               ></a>
+             </li>
+             <li class="rrss_item_point">•</li>
+             <li class="rrss_item">
+               <a
+                 class="links"
+                 href="mailto:carlotablancoa@gmail.com"
+                 target="_blank"
+                 ><i class="fas fa-envelope"></i
+               ></a>
+             </li>
+           </ul>
+         </article>
+      
+         </div>
+       </section>
+
+   </main>
+
+   <footer class="footer-border">
+     <nav class="footer-container">EQUIPO GRIFO © 2022</nav>
+
+     <div class="-who-we-are-contact">
+       <ul class="footer-links">
+         <li>
+           <a class="link-to" href="#equipo">EQUIPO</a>
+         </li>
+         <li>
+           <a class="link-to" href="#quienes_somos">QUÉNES SOMOS</a>
+         </li>
+         <li><a class="link-to" href="contacto.html">CONTACTO</a></li>
+       </ul>
+     </div>
+
+     <img class="logo-adalab" src="./assets/images/logo-adalab.png" />
+   </footer>
+
+    
+    <!--Footer-->
+    
   </body>
 </html>
