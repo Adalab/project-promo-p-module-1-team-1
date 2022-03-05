@@ -11,18 +11,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
+  line-height: 24px;
 }
+
 .team:target::before {
   content: "";
   display: block;
-  height: 130px;
-  margin: -130px 0 0;
+  height: 100px;
+  margin: -100px 0 0;
 }
 .who_we_are:target::before {
   content: "";
   display: block;
-  height: 120px;
-  margin: -120px 0 0;
+  height: 100px;
+  margin: -100px 0 0;
 }
 
 :root {
@@ -36,57 +39,73 @@
   --aqua: #14d9c4;
   --aqua-5: rgba(20, 217, 196, 0.5);
   --white: white;
+  --white-7: rgba(255, 255, 255, 0.7);
+  font-family: "Open Sans", sans-serif;
 }
 /*Header*/
-
 .header {
   width: 100%;
-  font-family: "Rubik", sans-serif;
-  text-align: center;
-  line-height: 2.5;
-  color: var(--white);
-  background-color: var(--blue-green-9);
   position: fixed;
   top: 0%;
   z-index: 2;
+  color: var(--white);
+  background-color: var(--blue-green-9);
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+}
+
+.team_name {
+  height: 60px;
+  text-align: center;
+  line-height: 2.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu {
+  height: 45px;
   background-color: var(--aqua-5);
-  font-family: "Rubik", sans-serif;
-  color: var(--white);
   list-style: none;
+  font-size: 15px;
   display: flex;
-  gap: 20px;
   justify-content: center;
+  align-items: center;
 }
 
 .menu_link {
   color: var(--white);
   text-decoration: none;
+  padding: 0 10px;
 }
 .hero {
-  position: relative;
-  top: 0;
+  background-image: url(../images/Grifo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  height: 421px;
 }
-.hero_img {
-  width: 100%;
-}
+
 .rectangle {
-  background-color: var(--white);
-  margin: -25px 25px 0px 25px;
+  background-color: var(--white-7);
+  margin: -25px 15px 0px 15px;
   padding: 10px 25px;
   position: relative;
 }
-.team_and_strenghts {
-  font-family: Rubik;
+.team {
+  padding: 0 15px;
 }
+
 .team_title {
+  font-family: "Rubik", sans-serif;
   color: var(--aqua);
   text-align: center;
   font-size: 24px;
   font-weight: bold;
   margin: 20px 0 20px 0;
+  text-transform: uppercase;
 }
 .team_description {
   margin: 0 15px;
@@ -100,6 +119,7 @@
 .team_resume {
   font-size: 18px;
   color: var(--black);
+  font-weight: bold;
 }
 .rombo {
   background-color: var(--white);
@@ -112,32 +132,41 @@
   background-color: var(--light-grey-blue);
   margin-top: -15px;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 40px;
+  padding: 45px 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: var(--dark-grey);
+}
+.strenghts_weakness p {
+  padding: 20px;
 }
 .strenghts_weakness h3 {
   color: var(--blue-green);
+  font-family: "Rubik", sans-serif;
   font-size: 22px;
-  font-weight: normal;
-  margin: 10px 0;
-  padding: 30px 0 10px 0;
 }
 .strenghts_weakness h3:first {
   margin-top: 50px;
 }
-.strenghts_weakness p {
-  font-weight: normal;
-  font-family: "Open Sans", sans-serif;
-  color: var(--dark-grey);
-  padding: 0 15px;
+
+.strenghts {
+  margin-bottom: 30px;
 }
+
 /*Section Quienes somos*/
+.who_we_are {
+  padding: 30px 15px 30px 15px;
+}
 
 .we_title {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  line-height: 45px;
+  font-weight: bold;
   color: var(--blue-green);
   font-family: "Rubik", sans-serif;
   text-align: center;
-  margin-top: 40px;
+  text-transform: uppercase;
 }
 .member_list {
   display: flex;
@@ -145,22 +174,22 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px 35px 15px;
 }
 
 .member {
   text-align: center;
-  padding: 30px 0 0 0;
+  padding: 30px 0 15px 0;
 }
 
 .member_name {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  margin: 5px 0;
+  line-height: 45px;
   color: var(--black);
 }
 .member_img {
   width: 180px;
+  height: 180px;
   margin: 0 55px 15px;
   border-radius: 43% 57% 43% 57% / 53% 36% 64% 47%;
   border: solid 5px var(--black-8);
@@ -174,7 +203,7 @@
 
 .rrss {
   list-style-type: none;
-  margin: 20px 0;
+  margin-top: 15px;
 }
 
 .rrss_item {
@@ -198,28 +227,17 @@
 
 /*Footer*/
 
-.footer-border {
+.footer {
   border: solid 2px var(--cool-grey);
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.footer-container {
+  font-size: 14px;
+  line-height: 20px;
   background-color: white;
   color: #b8b8b9;
-  display: flex;
-  height: fit-content;
 
-  padding-bottom: 30px;
-  margin-top: 30px;
-  text-align: center;
-}
-footer {
-  font-family: "Open Sans", sans-serif;
-}
-.footer-who-we-are {
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px 0 45px 0;
 }
 
 .footer-links {
@@ -227,7 +245,8 @@ footer {
   list-style: none;
   text-align: center;
   color: #54585a;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
 }
 
 .footer-links a {
@@ -238,26 +257,111 @@ footer {
 .logo-adalab {
   width: 150px;
   height: 50px;
-
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
-@media all and (min-width: 780px) {
+@media all and (min-width: 768px) {
   .header {
+    height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 45px;
+    padding: 15px 35px 15px 45px;
   }
   .menu {
     background-color: transparent;
   }
-  .team_name {
-    font-size: 16px;
-    font-weight: normal;
+  .rectangle {
+    width: 50%;
+    margin: -67px 45px 0px 45px;
+    padding: 15px 30px;
+  }
+  .team {
+    padding: 45px 45px 60px 45px;
+  }
+  .strenghts_weakness {
+    padding: 45px 35px 50px 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .strenghts {
+    margin-bottom: 0;
+  }
+  .who_we_are {
+    padding: 45px 13px 41px 13px;
+  }
+  .left_align {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding-right: 31px;
+  }
+  .right_align {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: right;
+    padding-left: 31px;
+  }
+  .member {
+    padding: 41px 0 19px 0;
+  }
+  .member_img {
+    width: 205px;
+    height: 205px;
+    margin: 0 31px;
+  }
+  .who-we-are-contact {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 24px 45px 56px 45px;
+  }
+  .footer-links {
+    text-align: end;
+    margin: 0;
+  }
+  .logo-adalab {
+    order: -1;
+
+    margin-top: 30px;
+  }
+  .copy-footer {
+    position: absolute;
+    top: 17%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .header {
+    padding: 15px 128px 15px 138px;
   }
   .hero {
-    background-image: url("./assets/images/Grifo.jpg");
+    height: 550px;
+  }
+  .rectangle {
+    width: 50%;
+    margin: -78px 138px 0px 138px;
+    padding: 15px 30px;
+  }
+  .team {
+    padding: 45px 300px 60px 300px;
+  }
+  .strenghts_weakness {
+    padding: 45px 138px 60px 138px;
+  }
+  .who_we_are {
+    padding: 45px 107px 41px 107px;
+  }
+  .footer {
+    padding: 24px 138px 56px 138px;
   }
 }
