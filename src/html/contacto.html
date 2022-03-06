@@ -1,16 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <include src="./partials/header.html"> 
-  </include>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
-  <include src="./partials/footer.html">   </include>
+    <title>Contacto | Project Team Grifo Team 1</title>
+  </head>
+  <body>
+    <!--Header-->
+   <include src="./partials/header.html"></include>
 
-</body>
+   <section class="hero_contact"></section>
+
+   <main>
+    <h1>Contacto</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempore quos eius tenetur maiores dolores consequuntur incidunt, officia vero eaque quod rem enim consectetur quaerat non sapiente hic fuga cupiditate?</p>
+
+    <p>Todos los campos marcados con * son obligatorios</p>
+
+    <form action="/signup" method="post">
+      <fieldset>
+        <label for="Name">Nombre Completo *</label>
+        <input placeholder="Nombre..." id="Name" type="text" name="Name" />
+      </fieldset>
+      <fieldset>
+        <label for="Email">Email *</label>
+        <input placeholder="nombre.apellidos@mail.com" id="email" type="email" name="Email" />
+      </fieldset>
+      <fieldset>
+        <label for="telephone">Teléfono</label>
+        <input placeholder="Ej: 123456789" id="telephone" type="tel" name="Email" />
+      </fieldset>
+      <fieldset>
+        <label for="message" name="message">Mensaje *</label>
+        <textarea placeholder="¿Qué necesitas?" name="message" id="message" cols="30" rows="10"></textarea>
+      </fieldset>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+   <include src="./partials/footer.html"></include>
+
+    
+    <!--Footer-->
+    
+  </body>
 </html>
