@@ -1,0 +1,25 @@
+.who_we_are {
+  padding: 30px 15px 30px 15px;
+  &__title {
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    line-height: 45px;
+    font-weight: bold;
+    color: $blue-green;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__members {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media all and (min-width: 768px) {
+    padding: 45px 13px 41px 13px;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 45px 107px 41px 107px;
+  }
+}

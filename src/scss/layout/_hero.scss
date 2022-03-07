@@ -1,0 +1,35 @@
+.hero {
+  background-image: url(../images/Grifo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: 70%;
+  height: 421px;
+  &__container {
+    background-color: $white-7;
+    margin: 0 15px;
+    transform: translate(0, -50%);
+    padding: 14px 15px 16px 15px;
+    position: absolute;
+    &--text {
+      font-size: 18px;
+      color: $black;
+      font-weight: bold;
+    }
+  }
+  @media all and (min-width: 768px) {
+    &__container {
+      width: 50%;
+      transform: translate(0, -100%);
+      margin: 0 45px;
+      padding: 15px 30px;
+    }
+  }
+  @media all and (min-width: 1200px) {
+    height: 550px;
+    &__container {
+      margin: 0 138px 0px;
+      padding: 15px 30px;
+    }
+  }
+}

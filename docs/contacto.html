@@ -1,47 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <header class="header">
-    <h1 class="team_name">Equipo Grifo</h1>
-    <nav>
-      <ul class="menu">
-        <li>
-          <a class="menu_link" href="#equipo">Equipo</a>
-        </li>
-        <li>
-          <a class="menu_link" href="#quienes_somos">Quiénes Somos</a>
-        </li>
-        <li>
-          <a class="menu_link" href="contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
+    <title>Project Team Grifo Team 1</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Equipo Grifo</h1>
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__menu--link" href="#equipo" title="Equipo">Equipo</a>
+          </li>
+          <li>
+            <a
+              class="header__menu--link"
+              href="#quienes_somos"
+              title="Quiénes Somos"
+              >Quiénes Somos</a
+            >
+          </li>
+          <li>
+            <a class="header__menu--link" href="contacto.html" title="Contacto"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <footer class="footer">
-    <p class="copy-footer">Equipo Grifo © 2022</p>
-    <nav>
-      <ul class="footer-links">
-        <li>
-          <a class="link-to" href="#equipo">Equipo</a>
-        </li>
-        <li>
-          <a class="link-to" href="#quienes_somos">Quiénes somos</a>
-        </li>
-        <li><a class="link-to" href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+    <main>
+      <h1>Contacto</h1>
 
-    <img class="logo-adalab" src="./assets/images/logo-adalab.png" />
-  </footer>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempore
+        quos eius tenetur maiores dolores consequuntur incidunt, officia vero
+        eaque quod rem enim consectetur quaerat non sapiente hic fuga
+        cupiditate?
+      </p>
 
+      <p>Todos los campos marcados con * son obligatorios</p>
 
-</body>
+      <form action="/signup" method="post">
+        <fieldset>
+          <label for="Name">Nombre Completo *</label>
+          <input placeholder="Nombre..." id="Name" type="text" name="Name" />
+        </fieldset>
+        <fieldset>
+          <label for="Email">Email *</label>
+          <input
+            placeholder="nombre.apellidos@mail.com"
+            id="email"
+            type="email"
+            name="Email"
+          />
+        </fieldset>
+        <fieldset>
+          <label for="telephone">Teléfono</label>
+          <input
+            placeholder="Ej: 123456789"
+            id="telephone"
+            type="tel"
+            name="Email"
+          />
+        </fieldset>
+        <fieldset>
+          <label for="message" name="message">Mensaje *</label>
+          <textarea
+            placeholder="¿Qué necesitas?"
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">Equipo Grifo © 2022</p>
+      <nav>
+        <ul class="footer__menu">
+          <li>
+            <a class="footer__menu—-links" href="#equipo" title="Equipo">Equipo</a>
+          </li>
+          <li>
+            <a
+              class="footer__menu—-links"
+              href="#quienes_somos"
+              title="Quiénes somos"
+              >Quiénes somos</a
+            >
+          </li>
+          <li>
+            <a class="footer__menu—-links" href="contacto.html" title="Contacto"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <img
+        class="footer__logo"
+        src="./assets/images/logo-adalab.png"
+        title="Adalab"
+      />
+    </footer>
+
+  </body>
 </html>

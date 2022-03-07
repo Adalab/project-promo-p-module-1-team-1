@@ -1,0 +1,37 @@
+.hero_contact {
+  background-image: url(../images/Grifo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  height: 421px;
+}
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #7e7e7e;
+  padding: 10px;
+}
+fieldset {
+  border: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+label {
+  margin-bottom: 10px;
+}
+button {
+  background-color: $blue-green;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  height: 45px;
+  color: #fff;
+  text-transform: uppercase;
+}
+textarea {
+  resize: none;
+}
