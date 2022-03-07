@@ -26,43 +26,60 @@
   </head>
   <body>
     <!--Header-->
-   <include src="./partials/header.html"></include>
+    <include src="./partials/header.html"></include>
 
-   <section class="hero_contact"></section>
+    <section class="hero_contact"></section>
 
-   <main>
-    <h1>Contacto</h1>
+    <main>
+      <h1>Contacto</h1>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempore quos eius tenetur maiores dolores consequuntur incidunt, officia vero eaque quod rem enim consectetur quaerat non sapiente hic fuga cupiditate?</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempore
+        quos eius tenetur maiores dolores consequuntur incidunt, officia vero
+        eaque quod rem enim consectetur quaerat non sapiente hic fuga
+        cupiditate?
+      </p>
 
-    <p>Todos los campos marcados con * son obligatorios</p>
+      <p>Todos los campos marcados con * son obligatorios</p>
 
-    <form action="/signup" method="post">
-      <fieldset>
-        <label for="Name">Nombre Completo *</label>
-        <input placeholder="Nombre..." id="Name" type="text" name="Name" />
-      </fieldset>
-      <fieldset>
-        <label for="Email">Email *</label>
-        <input placeholder="nombre.apellidos@mail.com" id="email" type="email" name="Email" />
-      </fieldset>
-      <fieldset>
-        <label for="telephone">Teléfono</label>
-        <input placeholder="Ej: 123456789" id="telephone" type="tel" name="Email" />
-      </fieldset>
-      <fieldset>
-        <label for="message" name="message">Mensaje *</label>
-        <textarea placeholder="¿Qué necesitas?" name="message" id="message" cols="30" rows="10"></textarea>
-      </fieldset>
-      
-      <button type="submit">Enviar</button>
-    </form>
-  </main>
+      <form action="/signup" method="post">
+        <fieldset>
+          <label for="Name">Nombre Completo *</label>
+          <input placeholder="Nombre..." id="Name" type="text" name="Name" />
+        </fieldset>
+        <fieldset>
+          <label for="Email">Email *</label>
+          <input
+            placeholder="nombre.apellidos@mail.com"
+            id="email"
+            type="email"
+            name="Email"
+          />
+        </fieldset>
+        <fieldset>
+          <label for="telephone">Teléfono</label>
+          <input
+            placeholder="Ej: 123456789"
+            id="telephone"
+            type="tel"
+            name="Email"
+          />
+        </fieldset>
+        <fieldset>
+          <label for="message" name="message">Mensaje *</label>
+          <textarea
+            placeholder="¿Qué necesitas?"
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </fieldset>
 
-   <include src="./partials/footer.html"></include>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
 
-    
-    <!--Footer-->
-    
+    <include src="./partials/footer.html"></include>
   </body>
 </html>
