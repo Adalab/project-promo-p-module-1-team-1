@@ -1,9 +1,9 @@
 .hero {
-  background-image: url(../images/Grifo2.jpg);
+  background-image: url(../images/Grifo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: top;
-  background-position-x: center;
+  background-position-y: center;
+  background-position-x: 70%;
   height: 421px;
   &__container {
     background-color: $white-7;
@@ -30,6 +30,47 @@
     }
   }
   @media all and (min-width: 1200px) {
+    height: 550px;
+    &__container {
+      margin: 0 138px 0px;
+      padding: 15px 30px;
+    }
+  }
+}
+.herocontact {
+  background-image: url(../images/Grifo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 60px;
+  background-position-x: center;
+  height: 421px;
+  &__container {
+    background-color: $white-7;
+    margin: 0 15px;
+    transform: translate(0, -50%);
+    padding: 14px 15px 16px 15px;
+    position: absolute;
+    &--text {
+      font-size: 18px;
+      color: $black;
+      font-weight: bold;
+    }
+  }
+  &__containernone {
+    display: none;
+  }
+
+  @media all and (min-width: 768px) {
+    background-position-y: 20px;
+    &__container {
+      width: 50%;
+      transform: translate(0, -100%);
+      margin: 0 45px;
+      padding: 15px 30px;
+    }
+  }
+  @media all and (min-width: 1200px) {
+    background-position-y: top;
     height: 550px;
     &__container {
       margin: 0 138px 0px;
