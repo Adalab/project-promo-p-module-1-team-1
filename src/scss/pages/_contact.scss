@@ -2,7 +2,7 @@
   background-image: url(../images/Grifo2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: center;
+  background-position-y: top;
   background-position-x: center;
   height: 421px;
 }
@@ -34,4 +34,22 @@ button {
 }
 textarea {
   resize: none;
+}
+.asterisk {
+  color: $aqua;
+}
+.contact {
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 500;
+  color: $blue-green;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px 95px 0 95px;
+}
+
+.contact_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

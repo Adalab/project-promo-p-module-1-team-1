@@ -26,25 +26,31 @@
   </head>
   <body>
     <include src="./partials/header.html"></include>
-    <main>
-      <h1>Contacto</h1>
 
-      <p>
+    <main>
+      <h1 class="contact">Contacto</h1>
+
+      <p class="contact_text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempore
         quos eius tenetur maiores dolores consequuntur incidunt, officia vero
         eaque quod rem enim consectetur quaerat non sapiente hic fuga
         cupiditate?
       </p>
 
-      <p>Todos los campos marcados con * son obligatorios</p>
+      <p class="contact_text">
+        Todos los campos marcados con <span class="asterisk">*</span> son
+        obligatorios
+      </p>
 
       <form action="/signup" method="post">
         <fieldset>
-          <label for="Name">Nombre Completo *</label>
+          <label for="Name"
+            >Nombre Completo <span class="asterisk">*</span></label
+          >
           <input placeholder="Nombre..." id="Name" type="text" name="Name" />
         </fieldset>
         <fieldset>
-          <label for="Email">Email *</label>
+          <label for="Email">Email <span class="asterisk">*</span></label>
           <input
             placeholder="nombre.apellidos@mail.com"
             id="email"
@@ -62,7 +68,9 @@
           />
         </fieldset>
         <fieldset>
-          <label for="message" name="message">Mensaje *</label>
+          <label for="message" name="message"
+            >Mensaje <span class="asterisk">*</span></label
+          >
           <textarea
             placeholder="¿Qué necesitas?"
             name="message"
