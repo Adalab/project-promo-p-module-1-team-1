@@ -2,8 +2,8 @@
   background-image: url(../images/Grifo2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: center;
-  background-position-x: 70%;
+  background-position-y: top;
+  background-position-x: center;
   height: 421px;
   &__container {
     background-color: $white-7;
@@ -17,6 +17,10 @@
       font-weight: bold;
     }
   }
+  &__containernone {
+    display: none;
+  }
+
   @media all and (min-width: 768px) {
     &__container {
       width: 50%;
