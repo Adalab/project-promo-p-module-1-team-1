@@ -36,22 +36,22 @@
       imagehero="herocontact"
     >
     </include>
-    <main>
-      <h1 class="contact">Contacto</h1>
+    <main class="main">
+      <h1 class="main__contact">Contacto</h1>
 
-      <p class="contact_text">
+      <p class="main__text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tempore
         quos eius tenetur maiores dolores consequuntur incidunt, officia vero
         eaque quod rem enim consectetur quaerat non sapiente hic fuga
         cupiditate?
       </p>
 
-      <p class="contact_text">
+      <legend class="main__text2">
         Todos los campos marcados con <span class="asterisk">*</span> son
         obligatorios
-      </p>
+      </legend>
 
-      <form action="/signup" method="post">
+      <form class="form" action="/signup" method="post">
         <fieldset>
           <label for="Name"
             >Nombre Completo <span class="asterisk">*</span></label
@@ -61,7 +61,7 @@
         <fieldset>
           <label for="Email">Email <span class="asterisk">*</span></label>
           <input
-            placeholder="nombre.apellidos@mail.com"
+            placeholder="ejemplo@mail.com"
             id="email"
             type="email"
             name="Email"
@@ -70,7 +70,7 @@
         <fieldset>
           <label for="telephone">Teléfono</label>
           <input
-            placeholder="Ej: 123456789"
+            placeholder="Ej: +34 000 000 000"
             id="telephone"
             type="tel"
             name="Email"

@@ -11,7 +11,7 @@ input {
   -moz-appearance: none;
   appearance: none;
   border: 1px solid #7e7e7e;
-  padding: 10px;
+  padding: 15px;
 }
 fieldset {
   border: 0;
@@ -34,22 +34,39 @@ button {
 }
 textarea {
   resize: none;
+  padding: 15px;
 }
 .asterisk {
   color: $aqua;
 }
-.contact {
+
+.main {
+  padding: 30px 15px 60px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.main__contact {
   font-family: Rubik;
   font-size: 24px;
   font-weight: 500;
   color: $blue-green;
   text-transform: uppercase;
+  padding-bottom: 15px;
   text-align: center;
-  margin: 30px 95px 0 95px;
 }
 
-.contact_text {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.main__text {
+
+  text-align: center;
 }
+
+.main__text2 {
+padding-top: 30px ;
+font-size: small;
+padding-bottom: 58px;
+text-align: center;
+}
+
