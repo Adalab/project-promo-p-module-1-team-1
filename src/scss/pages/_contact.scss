@@ -40,33 +40,59 @@ textarea {
   color: $aqua;
 }
 
+
+
 .main {
   padding: 30px 15px 60px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+
+  
+  &__contact {
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 500;
+    color: $blue-green;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    text-align: center;
+    }
+    
+    &__text {
+
+      text-align: center;
+    }
+    
+    &__text2 {
+    padding-top: 30px ;
+    font-size: small;
+    padding-bottom: 58px;
+    text-align: center;
+    }
+
+   
 
 
-.main__contact {
-  font-family: Rubik;
-  font-size: 24px;
-  font-weight: 500;
-  color: $blue-green;
-  text-transform: uppercase;
-  padding-bottom: 15px;
-  text-align: center;
-}
+    @media all and (min-width: 1200px) {
 
-.main__text {
+      .react {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      
+        &__email {
+        margin-right: 45px;
+        width: 395px;
+        }
 
-  text-align: center;
-}
+        &__phone {
+          width: 162px;
+          }
+      }
+    }
 
-.main__text2 {
-padding-top: 30px ;
-font-size: small;
-padding-bottom: 58px;
-text-align: center;
-}
+  }   
+
+
 
